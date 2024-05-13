@@ -1,0 +1,75 @@
+.navbar {
+  position: relative;
+  background-color: transparent;
+  height: 80px;
+}
+
+.navbar-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #0c69ff, #468ae3);
+}
+
+
+
+.navbar-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1; /* Asegura que el contenido esté por encima de la imagen de fondo */
+}
+
+.navbar-logo {
+  width: 60px; /* Ajusta el tamaño del logo según lo necesites */
+  height: auto;
+
+  margin-right: 20px; /* Ajusta el espacio entre el logo y el texto según lo desees */
+}
+
+.navbar-title {
+  /* display: flex; */
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-size: 24px; /* Ajusta el tamaño del texto según lo desees */
+  width: 100%;
+}
+
+.red {
+  color: red; /* Cambia el color de la palabra "Red" según lo desees */
+}
+
+/* Animación del título */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.navbar-title span {
+  animation: fadeIn 2s ease; /* Ajusta la duración y la suavidad de la animación según lo desees */
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 0.5s; /* Ajusta el retraso de la animación según lo desees */
+}
+
+.title-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente */
+  text-align: center; /* Centra el texto */
+  margin: 0;
+  padding: 0;
+}
+
+
+
